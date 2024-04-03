@@ -7,9 +7,8 @@ jobs:
     steps:
 
     - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ftp.ducodeverse.com
         username: ${{ secrets.FTP_USERNAME01 }}
         password: ${{ secrets.FTP_PASSWORD01 }}
-        local-dir: ./dist/
+    
