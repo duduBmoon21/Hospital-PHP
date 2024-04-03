@@ -1,14 +1,1 @@
-on: push
-name: 🚀 Deploy website on push
-jobs:
-  web-deploy:
-    name: 🎉 Deploy
-    runs-on: ubuntu-latest
-    steps:
 
-    - name: 📂 Sync files
-      with:
-        server: ftp.ducodeverse.com
-        username: ${{ secrets.FTP_USERNAME01 }}
-        password: ${{ secrets.FTP_PASSWORD01 }}
-    
